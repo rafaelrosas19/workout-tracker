@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
 });
 
 // adding route requirements that still need to be added
-app.use(require("./routes/api.js"));
+// app.use(require("./routes/api.js"));
 app.use(require("./routes/html.js"));
 
 app.listen(PORT, () => {
